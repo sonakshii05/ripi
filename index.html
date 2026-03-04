@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Sonakshi Padhi — CS Engineering Student passionate about Data Analysis & Cybersecurity." />
+  <title>Sonakshi | Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- CUSTOM CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- SCROLL PROGRESS -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- HEADER -->
+  <header class="header" id="navbar">
+    <nav class="nav-container">
+
+      <div class="logo"><span>Sonakshi</span><span class="dot">.</span></div>
+
+      <!-- Desktop Links -->
+      <div class="links">
+        <div class="link"><a href="#Home" class="nav-link">Home</a></div>
+        <div class="link"><a href="#About" class="nav-link">About</a></div>
+        <div class="link"><a href="#Skills" class="nav-link">Skills</a></div>
+        <div class="link"><a href="#Education" class="nav-link">Education</a></div>
+        <div class="link"><a href="#Experience" class="nav-link">Experience</a></div>
+        <div class="link"><a href="#Projects" class="nav-link">Projects</a></div>
+        <div class="link"><a href="#Contact" class="nav-link">Contact</a></div>
+      </div>
+
+      <!-- Nav Right: Theme Toggle + Hamburger -->
+      <div class="nav-right">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <span class="theme-toggle-thumb">🌙</span>
+        </button>
+        <div class="hamburger" id="hamburger">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+
+    </nav>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <span class="close-btn" id="close-menu">✕</span>
+    <a href="#Home" class="mobile-link">Home</a>
+    <a href="#About" class="mobile-link">About</a>
+    <a href="#Skills" class="mobile-link">Skills</a>
+    <a href="#Education" class="mobile-link">Education</a>
+    <a href="#Experience" class="mobile-link">Experience</a>
+    <a href="#Projects" class="mobile-link">Projects</a>
+    <a href="#Contact" class="mobile-link">Contact</a>
+  </div>
+  <div class="menu-overlay" id="menuOverlay"></div>
+
+  <!-- HOME -->
+  <section id="Home" class="Home">
+
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <canvas id="particleCanvas"></canvas>
+    </div>
+
+    <div class="header-image">
+      <div class="image-glow"></div>
+      <img src="pic.jpeg" alt="Sonakshi Padhi" />
+    </div>
+
+    <div class="home-content">
+      <div class="hero-tag">
+        <span class="tag-dot"></span>
+        Open to opportunities
+      </div>
+
+      <h1>Hi, <span class="name-highlight">I'm Sonakshi</span></h1>
+      <p class="hero-role">Computer Science Engineering Student</p>
+      <p class="typing-text">"I thrive at the intersection of data and security — analyzing information to uncover
+        insights while safeguarding systems against risk."</p>
+
+      <div class="social-icons">
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      </div>
+
+      <a href="#Contact" class="btn hire-me">
+        Hire Me <span class="btn-arrow">↗</span>
+      </a>
+    </div>
+
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="About" class="section about-section">
+    <div class="container">
+      <div class="section-label">/ About</div>
+      <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+
+      <p class="intro-text">
+        Hi, I'm <strong>Sonakshi Padhi</strong> — a second-year engineering student (4th semester) navigating the worlds
+        of <span class="highlight">data</span> and <span class="highlight">cybersecurity</span>.
+        I'm fascinated by patterns hidden in chaos and the invisible threads that keep systems safe.
+        Every dataset tells a story, every system has a vulnerability, and I love turning questions into clarity,
+        and complexity into solutions that work.
+        I build with purpose, analyze with curiosity, and approach every challenge as a chance to make technology <span
+          class="highlight">smarter</span>, <span class="highlight">cleaner</span>, and a little more <span
+          class="highlight">human</span>.
+      </p>
+
+      <p class="current-focus">
+        Currently, I'm diving deep into data analysis techniques and cybersecurity fundamentals,
+        honing my skills in SQL, Python, and network security protocols.
+        I'm also exploring machine learning applications in data security to stay ahead of emerging threats.
+      </p>
+
+      <p class="important-question"><strong>Why you should hire me?</strong></p>
+      <p class="hire-me-reason">
+        I bring a unique blend of analytical thinking and a passion for cybersecurity to the table.
+        My ability to dissect complex datasets and identify vulnerabilities allows me to develop robust solutions that
+        enhance system security.
+        I'm not just looking to fill a role; I'm eager to contribute meaningfully to projects that require both data
+        insight and security acumen.
+      </p>
+
+      <p class="currently-exploring"><strong>Currently exploring:</strong></p>
+      <ul class="about-list">
+        <li>Data analysis &amp; visualization</li>
+        <li>Database systems &amp; SQL</li>
+        <li>Cybersecurity fundamentals</li>
+        <li>Problem-solving through clean logic</li>
+        <li>Effective communication of complex ideas</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="Skills" class="section skills-section">
+    <div class="container">
+      <div class="section-label">/ Skills</div>
+      <h2 class="section-title">What I <span class="gradient-text">work with</span></h2>
+
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <h3>⚡ Frontend Development</h3>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <h3>🛠️ Programming &amp; Logic</h3>
+          <ul>
+            <li><span class="skill-name">C Programming</span><span class="skill-desc">Pointers, arrays, stacks, linked
+                lists.</span></li>
+            <li><span class="skill-name">Java</span><span class="skill-desc">OOP, collections, file handling.</span>
+            </li>
+            <li><span class="skill-name">Python</span><span class="skill-desc">Pandas, NumPy, Matplotlib, basics of
+                ML.</span></li>
+            <li><span class="skill-name">Data Structures</span><span class="skill-desc">Stack, queue, linked list,
+                trees, graphs.</span></li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <h3>🗄️ Databases &amp; Tools</h3>
+          <ul>
+            <li>SQL</li>
+            <li>MySQL</li>
+            <li>Git &amp; GitHub</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <h3>🔒 Cybersecurity</h3>
+          <ul>
+            <li>Cybersecurity Fundamentals</li>
+            <li>Threat Identification</li>
+            <li>Risk Assessment</li>
+            <li>Security Best Practices</li>
+          </ul>
+        </div>
+
+        <div class="skill-card learning">
+          <h3>🚀 Currently Expanding</h3>
+          <ul>
+            <li>Advanced SQL</li>
+            <li>Data Analysis with Python</li>
+            <li>Applied Network Security</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <h3>💡 Core Strengths</h3>
+          <ul>
+            <li>Analytical Thinking</li>
+            <li>Problem Decomposition</li>
+            <li>Attention to Detail</li>
+            <li>Continuous Learning</li>
+          </ul>
+        </div>
+
+        <div class="skill-card skill-card-softskills">
+          <h3>🗣️ Communication &amp; Expression</h3>
+          <ul>
+            <li>English, Hindi, Odia</li>
+            <li>Creative Writing</li>
+            <li>Public Speaking</li>
+            <li>Debate &amp; Elocution</li>
+          </ul>
+        </div>
+
+        <div class="skill-card skill-bars-card">
+          <h3>📊 Programming Proficiency</h3>
+          <div class="skill-bar">
+            <span>C Programming</span>
+            <div class="bar">
+              <div class="fill c"></div>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <span>Java</span>
+            <div class="bar">
+              <div class="fill java"></div>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <span>Python</span>
+            <div class="bar">
+              <div class="fill python"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card coursework-card">
+          <h3>📚 Coursework &amp; Highlights</h3>
+          <ul>
+            <li>DBMS</li>
+            <li>Data Structures &amp; Algorithms</li>
+            <li>Operating Systems</li>
+            <li>Computer Organization &amp; Architecture</li>
+            <li>Design &amp; Analysis of Algorithms</li>
+            <li>Artificial Intelligence Tools</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="Education" class="section education-section">
+    <div class="container">
+      <div class="section-label">/ Education</div>
+      <h2 class="section-title">My <span class="gradient-text">Journey</span></h2>
+
+      <div class="education-timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-year">2024–2028</div>
+          <div class="timeline-content">
+            <h3>B.Tech in Computer Science and Engineering</h3>
+            <p><strong>University:</strong> NIST University</p>
+            <p><strong>CGPA:</strong> 8.86</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-year">2021–2023</div>
+          <div class="timeline-content">
+            <h3>12th (PCMB)</h3>
+            <p><strong>School:</strong> DAV Public School</p>
+            <p><strong>Board:</strong> CBSE</p>
+            <p><strong>Percentage:</strong> 85.2%</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-year">2008–2021</div>
+          <div class="timeline-content">
+            <h3>10th</h3>
+            <p><strong>School:</strong> Matrusri Anglo Vedic School</p>
+            <p><strong>Board:</strong> ICSE</p>
+            <p><strong>Percentage:</strong> 95%</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="Experience" class="section experience-section">
+    <div class="container">
+      <div class="section-label">/ Experience</div>
+      <h2 class="section-title">What I've <span class="gradient-text">built</span></h2>
+
+      <div class="experience-timeline">
+        <div class="experience-item">
+          <div class="experience-year">2025</div>
+          <div class="experience-content">
+            <h3>Home Automation Using Edge Computing (IoT Group Project)</h3>
+            <ul>
+              <li>Developed an IoT-based home automation system using Arduino UNO R4 WiFi.</li>
+              <li>Implemented edge computing by processing commands locally without cloud dependency.</li>
+              <li>Configured Arduino as a local web server accessible through a browser.</li>
+              <li>Integrated relay modules to control AC appliances based on user input.</li>
+              <li>Collaborated with teammates on hardware setup, testing, and system integration.</li>
+            </ul>
+            <p><a href="YOUR_LINKEDIN_VIDEO_LINK" target="_blank" class="timeline-link">View Project Video ↗</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="Projects" class="section projects-section">
+    <div class="container">
+      <div class="section-label">/ Projects</div>
+      <h2 class="section-title">Featured <span class="gradient-text">work</span></h2>
+
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <h4>CafeX</h4>
+          <span class="project-year">2025</span>
+          <p>A responsive café website built using HTML and CSS with basic JavaScript for interactivity and improved
+            user experience. Deployed on Netlify to ensure cross-device compatibility.</p>
+          <p class="project-tools">Tools: HTML, CSS, JavaScript</p>
+          <div class="project-links">
+            <a href="https://cafeex.netlify.app/" target="_blank">Live Site ↗</a>
+            <a href="YOUR_GITHUB_LINK" target="_blank">GitHub</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h4>NagrikSetu</h4>
+          <span class="project-year">2025</span>
+          <p>A team-based web platform designed to improve citizen access to digital services. Contributed to frontend
+            development with a focus on layout, responsiveness, and UI design.</p>
+          <p class="project-tools">Tools: HTML, CSS, React, MongoDB</p>
+          <div class="project-links">
+            <a href="https://www.nagriksetu.site/" target="_blank">Live Site ↗</a>
+            <a href="YOUR_GITHUB_LINK" target="_blank">GitHub</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h4>Harrypottertribute</h4>
+          <span class="project-year">2026</span>
+          <p>A tribute webpage dedicated to the Harry Potter series, showcasing key characters, plot points, and fan
+            art. Built with HTML, CSS, and JS. Features forbidden forest, room of mirrors, potion brewing and sorting
+            hat.</p>
+          <p class="project-tools">Tools: HTML, CSS, JavaScript</p>
+          <div class="project-links">
+            <a href="https://harrypottertribute.netlify.app" target="_blank">Live Site ↗</a>
+            <a href="YOUR_GITHUB_LINK" target="_blank">GitHub</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h4>Mini-games</h4>
+          <span class="project-year">2026</span>
+          <p>A collection of Python-based mini games: rock paper scissors, sudoku, memory game, tic tac toe. Built using
+            Flask and deployed on Netlify.</p>
+          <p class="project-tools">Tools: HTML, CSS, JavaScript, Python (Flask)</p>
+          <div class="project-links">
+            <a href="https://minigames.netlify.app" target="_blank">Live Site ↗</a>
+            <a href="YOUR_GITHUB_LINK" target="_blank">GitHub</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h4>Talk-A-Tool</h4>
+          <span class="project-year">2026</span>
+          <p>A web application that uses AI to generate human-like text based on user input. Built with HTML, CSS,
+            JavaScript, and Python (Flask) for backend processing. Demonstrates integration of AI language models to
+            create dynamic content.</p>
+          <p class="project-tools">Tools: HTML, CSS, JavaScript, Python (Flask), AI Language Models</p>
+          <div class="project-links">
+            <a href="https://humanwrite.netlify.app" target="_blank">Live Site ↗</a>
+            <a href="YOUR_GITHUB_LINK" target="_blank">GitHub</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="Contact" class="section contact-section">
+    <div class="container">
+      <div class="section-label">/ Contact</div>
+      <h2 class="section-title">Let's <span class="gradient-text">connect</span></h2>
+      <p class="contact-subtext">Have an idea, a project, or just curiosity knocking? My inbox is open for all things
+        interesting.</p>
+
+      <div class="contact-cards">
+        <a href="mailto:wintrydust@gmail.com" class="contact-card">
+          <div class="contact-card-icon">✉️</div>
+          <span>Email</span>
+          <p>Connect on mail</p>
+        </a>
+        <a href="https://www.linkedin.com/in/sonakshi-padhi/" target="_blank" class="contact-card">
+          <div class="contact-card-icon">💼</div>
+          <span>LinkedIn</span>
+          <p>Connect professionally</p>
+        </a>
+        <a href="https://github.com/sonakshii05" target="_blank" class="contact-card">
+          <div class="contact-card-icon">🐙</div>
+          <span>GitHub</span>
+          <p>View my work</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="logo">Sonakshi<span class="dot">.</span></span>
+      <p>Crafted with ❤️ &amp; curiosity — © 2026 Sonakshi Padhi</p>
+      <a href="#Home" class="footer-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════
+       AI CHATBOT
+       ═══════════════════════════════════════════ -->
+
+  <!-- Floating trigger button -->
+  <button class="chat-fab" id="chatFab" aria-label="Open AI assistant">
+    <span class="chat-fab-icon open-icon">💬</span>
+    <span class="chat-fab-icon close-icon">✕</span>
+    <span class="chat-fab-pulse"></span>
+  </button>
+
+  <!-- Chat window -->
+  <div class="chat-window" id="chatWindow" role="dialog" aria-label="AI Assistant">
+    <div class="chat-header">
+      <div class="chat-header-info">
+        <div class="chat-avatar">✨</div>
+        <div>
+          <div class="chat-title">Ripi</div>
+          <div class="chat-status"><span class="status-dot"></span>Powered by Groq AI</div>
+        </div>
+      </div>
+      <button class="chat-close" id="chatClose" aria-label="Close chat">✕</button>
+    </div>
+
+    <div class="chat-messages" id="chatMessages">
+      <!-- Welcome message injected by JS -->
+    </div>
+
+    <div class="chat-input-area">
+      <input type="text" id="chatInput" class="chat-input" placeholder="Ask me about Sonakshi…" autocomplete="off"
+        maxlength="400" />
+      <button class="chat-send" id="chatSend" aria-label="Send message">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+          stroke-linecap="round" stroke-linejoin="round">
+          <line x1="22" y1="2" x2="11" y2="13"></line>
+          <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
