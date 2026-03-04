@@ -60,35 +60,6 @@ Get your key at [console.groq.com](https://console.groq.com).
 python server.py
 ```
 
-Open **http://localhost:5000** in your browser.
-
-> ⚠️ Do NOT use `python -m http.server` anymore — `server.py` handles static files too.
-
----
-
-## 🌐 Deploy to Render (Free)
-
-1. Push project to GitHub (`.env` is gitignored — safe)
-2. Go to [render.com](https://render.com) → **New Web Service**
-3. Connect your GitHub repo
-4. Set these in Render dashboard:
-   - **Build command:** `pip install -r requirements.txt`
-   - **Start command:** `gunicorn server:app`
-5. Add environment variable in Render:
-   - `GROQ_API_KEY` → paste your Groq key
-6. Deploy — you'll get a live URL like `https://sonakshi-portfolio.onrender.com`
-
----
-
-## 🌐 Deploy to Heroku
-
-```bash
-heroku create sonakshi-portfolio
-heroku config:set GROQ_API_KEY=your_groq_key_here
-git push heroku main
-```
-
----
 
 ## 🤖 Chatbot Persona
 
@@ -111,3 +82,4 @@ The AI knows about Sonakshi's:
 ## 📄 License
 
 MIT — feel free to fork and customize!
+
