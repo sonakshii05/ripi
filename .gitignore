@@ -1,0 +1,16 @@
+# .gitignore — keep secrets and junk out of version control
+.env
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+.DS_Store
+Thumbs.db
+*.log
